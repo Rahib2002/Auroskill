@@ -3,53 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problem 3 CSS practise</title>
+    <title>Assignment 3, css</title>
     <style>
-        nav{
-            display: flex;
+        #parent {
+            width: 95%;
+            margin: 30px auto;
+            background: #eee;
+            padding: 15px;
+            border-radius: 15px;
         }
 
-        .logo{
-            width: 70%;
+
+        .child1 {
+            width: 90%;
+            height: 300px;
+            text-align: center;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://cdn.mos.cms.futurecdn.net/q7x3qqHqpsBu9JtaTiSqrh.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 40px;
+            color: white;
+            border-radius: 10px;
         }
 
-        button{
-            border: none;
-            background-color: transparent;
-            margin: 20px;
+        .child1 p {
+            font-size: 12px;
+            opacity: 0.8;
         }
 
-        .parent{
-            display: flex;
+        .child1 h3 {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
         }
 
-        .child1{
-            width: 70%;
-            height: 500px;
-        }   
 
-        .child{
-            width: 30%;
+        .child2 {
+            background-color: black;
+            padding: 40px;
+            color: white;
+            margin-top: 10px;
+            border-radius: 10px;
+            text-align: center;
         }
 
-        img{
-           height: 400px; 
+        .child2 h3 {
+            text-decoration: underline;
+            letter-spacing: 4px;
+            word-spacing: 8px;
+            font-style: italic;
+            color: white
+            ;
+        }
+
+        .child2 p {
+            font-size: 14px;
+            margin: 15px 0;
+        }
+        .child2 ol {
+            margin-top: 20px;
+            line-height: 1.8;
         }
     </style>
-
 </head>
 <body>
-    <nav>
-        <p class="logo">Resturent</p>
-        <button>Home</button><button>Address</button><button>Contact</button>
-    </nav>
-    <div class="parent">
+    <div id="parent">
         <div class="child1">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, iure nisi illum sequi accusantium quod obcaecati fugiat, libero asperiores corporis doloribus sed repellat excepturi animi dolor beatae sapiente quo ex! Deleniti, rerum, consequuntur iusto quis exercitationem doloribus adipisci et quia corrupti accusantium expedita debitis est dolor. Dolor quidem, assumenda praesentium cumque recusandae est ipsum repellat officiis, provident, illo debitis necessitatibus! Praesentium perferendis reiciendis suscipit temporibus. Qui, quod voluptatem! Laudantium esse commodi sequi sed adipisci inventore blanditiis optio eum dolorem. Ut velit quibusdam autem a, excepturi soluta corrupti repudiandae, tempora commodi, quia alias nemo temporibus labore iste minus dicta odit culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ut, velit alias molestiae labore cupiditate perspiciatis vero, laudantium et quidem quod earum dolore numquam atque fugit exercitationem rem error distinctio iste blanditiis nobis praesentium, voluptates ab! Vitae possimus aliquid modi commodi optio iusto pariatur magni veniam, quidem itaque voluptate accusamus. Reiciendis voluptas temporibus repellat cumque, sint amet eaque mollitia necessitatibus. Ipsum molestiae voluptatem, laboriosam cumque voluptatum blanditiis. Dicta sunt recusandae nulla, alias numquam perferendis cumque accusamus dolores quis aliquam neque temporibus voluptates distinctio animi rem. A error dolorem facilis autem quisquam libero maiores, ullam unde ea asperiores! Eligendi atque qui repudiandae ut optio maiores et, sed repellendus quos odit, earum quo possimus ipsa, fugit odio officia dolor! Quae libero veritatis saepe a, dolorem repellendus eum quasi repellat quam voluptas quo voluptatibus. Sequi consequuntur suscipit voluptates sint porro ducimus vero rerum. Quibusdam alias molestias eveniet, tempore minus soluta expedita iste id!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque autem quia aspernatur, enim repellat nulla quaerat commodi possimus hic ducimus aperiam dolorem nisi blanditiis porro exercitationem nostrum voluptatum ea necessitatibus!</p>
+            <h3>Background image color has been lighten, inside spacing has been given</h3>
         </div>
-        <div class="child">
-            <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?cs=srgb&dl=clouds-cloudy-countryside-236047.jpg&fm=jpg" alt="">
+        <div class="child2">
+            <H3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, fuga!</H3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro a magni deserunt necessitatibus, dolor, reiciendis consequuntur sint sunt tempora nesciunt, veritatis ratione itaque quibusdam! Ad!</p>
+            <ol>
+                <li>text-align, text-decoration, text-shadow property you have to use</li>
+                <li>word spacing and letter spacing you hvae to use</li>
+                <li>font-style, font-family, font-size you have to use</li>
+            </ol>
         </div>
     </div>
 </body>
